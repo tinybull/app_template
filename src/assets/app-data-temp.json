@@ -1,0 +1,953 @@
+{
+    "id": "zijin-itms",
+    "text": "紫金智慧金库管理系统",
+    "group": true,
+    "children": [
+
+        {
+            "text": "行为管理",
+            "serverID": "D",
+            "id": "behavior",
+            "icon": "zijin-icon-profile2",
+            "group": true,
+            "children": [
+                {
+                    "serverID": "D01",
+                    "text": "岗位门禁管理",
+                    "id": "behavior.access.manage",
+                    "icon": "zijin-icon-Secondary-icon",
+                    "group": true,
+                    "children": [
+                        {
+                            "id": "behavior.jobInfo",
+                            "serverID": "D0101",
+                            "text": "岗位信息管理",
+                            "textShowFlag": false,
+                            "tile_size": "tile",
+                            "background": "behavior/post-information.png",
+                            "link": "/behavior/jobInfo"
+                        },
+                        {
+                            "id": "behavior.entranceGuardInfo",
+                            "serverID": "D0102",
+                            "text": "门禁信息管理",
+                            "textShowFlag": false,
+                            "tile_size": "tile",
+                            "background": "behavior/Access-control.png",
+                            "link": "/behavior/entranceGuardInfo"
+                        }
+                    ]
+                },
+                {
+                    "serverID": "D02",
+                    "id": "behavior.workerInfo.manage",
+                    "text": "人员管理",
+                    "icon": "zijin-icon-Secondary-icon",
+                    "group": true,
+                    "children": [
+                        {
+                            "id": "behavior.areaInfo",
+                            "serverID": "D0201",
+                            "text": "区域信息管理",
+                            "textShowFlag": false,
+                            "tile_size": "tile",
+                            "background": "behavior/Regional-information.png",
+                            "link": "/behavior/areaInfo"
+                        },
+                        {
+                            "id": "behavior.workerInfo",
+                            "serverID": "D0202",
+                            "text": "人员信息管理",
+                            "textShowFlag": false,
+                            "tile_size": "tile",
+                            "background": "behavior/Personnel-information.png",
+                            "link": "/behavior/workerInfo"
+                        },
+                        {
+                            "id": "behavior.visitorInfo",
+                            "serverID": "D0203",
+                            "text": "访客信息管理",
+                            "textShowFlag": true,
+                            "tile_size": "tile",
+                            "background": "behavior/Visitor-information-.png",
+                            "link": "/behavior/visitorInfo"
+                        }
+                    ]
+                },
+                {
+                    "serverID": "D03",
+                    "text": "行为管理",
+                    "id": "behavior.info.manage",
+                    "icon": "zijin-icon-Secondary-icon",
+                    "group": true,
+                    "children": [
+                        {
+                            "id": "behavior.accessRecords",
+                            "serverID": "D0301",
+                            "text": "人员出入记录查询",
+                            "textShowFlag": false,
+                            "tile_size": "tile",
+                            "background": "/behavior/Attendance-record.png",
+                            "link": "/behavior/accessRecords"
+                        },
+                        {
+                            "id": "behavior.peopleMonitor",
+                            "serverID": "D0302",
+                            "text": "区域实时监控",
+                            "textShowFlag": false,
+                            "tile_size": "tile",
+                            "background": "/behavior/Regional-monitoring.png",
+                            "link": "/behavior/1ryLocationInfo"
+                        },
+                        {
+                            "id": "behavior.areaHistoryMonitor",
+                            "serverID": "D0303",
+                            "text": "区域历史活动查询",
+                            "textShowFlag": false,
+                            "tile_size": "tile",
+                            "background": "/behavior/Regional-activities.png",
+                            "link": "/behavior/areaHistoryMonitor"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "text": "仓储管理",
+            "serverID": "E",
+            "id": "warehouse",
+            "icon": "zijin-icon-warehouse",
+            "group": true,
+            "children": [
+                {
+                    "text": "库房设计管理",
+                    "serverID": "E01",
+                    "id": "warehouse.design.manage",
+                    "icon": "zijin-icon-Secondary-icon",
+                    "group": true,
+                    "children": [
+                        {
+                            "id": "warehouse.info-manage",
+                            "text": "库区基础信息管理",
+                            "serverID": "E0101",
+                            "tile_size": "tile",
+                            "background": "warehouse/reservoir-information.png",
+                            "textShowFlag": true,
+                            "link": "/warehouse/info-manage"
+                        },
+                        {
+                            "id": "warehouse.design",
+                            "text": "库房设计",
+                            "serverID": "E0102",
+                            "tile_size": "tile",
+                            "background": "warehouse/Warehouse-design.png",
+                            "textShowFlag": false,
+                            "link": "/warehouse/design"
+                        }
+                    ]
+                },
+                {
+                    "text": "库位管理",
+                    "serverID": "E02",
+                    "id": "warehouse.location.manage",
+                    "icon": "zijin-icon-Secondary-icon",
+                    "group": true,
+                    "children": [
+                        {
+                            "id": "warehouse.location-info",
+                            "text": "库位基础信息管理",
+                            "serverID": "E0201",
+                            "tile_size": "tile",
+                            "background": "warehouse/Basic-information.png",
+                            "textShowFlag": false,
+                            "link": "/warehouse/location-info"
+                        },
+                        {
+                            "id": "warehouse.location-monitor",
+                            "text": "库位使用信息监控",
+                            "serverID": "E0202",
+                            "tile_size": "tile",
+                            "background": "warehouse/Location-monitoring.png",
+                            "textShowFlag": true,
+                            "link": "/warehouse/location-monitor"
+                        },
+                        {
+                            "id": "warehouse.location-analyze",
+                            "text": "库位使用信息分析",
+                            "serverID": "E0203",
+                            "tile_size": "tile",
+                            "background": "warehouse/_use-of-information.png",
+                            "textShowFlag": false,
+                            "link": "/warehouse/location-analyze"
+                        }
+                    ]
+                },
+                {
+                    "text": "库存盘点管理",
+                    "serverID": "E03",
+                    "id": "warehouse.stock-taking.manage",
+                    "icon": "zijin-icon-Secondary-icon",
+                    "group": true,
+                    "children": [
+                        {
+                            "id": "warehouse.inventory",
+                            "text": "盘点任务管理",
+                            "serverID": "E0301",
+                            "tile_size": "tile",
+                            "background": "warehouse/Counting-task.png",
+                            "textShowFlag": false,
+                            "link": "/warehouse/inventory"
+                        }
+                    ]
+                },
+                {
+                    "text": "库存管理",
+                    "serverID": "E04",
+                    "id": "warehouse.inventory.manage",
+                    "icon": "zijin-icon-Secondary-icon",
+                    "group": true,
+                    "children": [
+                        {
+                            "id": "vault.vault-center",
+                            "icon": "zijin-icon-Secondary-icon",
+                            "serverID": "E0401",
+                            "text": "当日现金库存汇总",
+                            "tile_size": "tile",
+                            "background": "vaultLedger/icon_Vault-bill.png",
+                            "link": "/vault/vault-center"
+                        },
+                        {
+                            "id": "vault.day-cash-ledger",
+                            "serverID": "E0402",
+                            "text": "当日现金台账汇总",
+                            "tile_size": "tile",
+                            "background": "vaultLedger/icon_Cash-accounts.png",
+                            "link": "/vault/day-cash-ledger"
+                        },
+                        {
+                            "id": "vault.cash-output-detail",
+                            "serverID": "E0403",
+                            "text": "现金出入库明细",
+                            "tile_size": "tile",
+                            "background": "vaultLedger/icon_Cash-discrepancy.png",
+                            "link": "/vault/cash-output-detail"
+                        },
+                        {
+                            "id": "vault.branch-cashbox-ledger",
+                            "serverID": "E0404",
+                            "text": "当日寄库款箱台账汇总",
+                            "tile_size": "tile",
+                            "background": "vaultLedger/icon_Cash-box-summary.png",
+                            "textShowFlag": true,
+                            "link": "/vault/branch-cashbox-ledger"
+                        },
+                        {
+                            "id": "vault.input-cashbox-detail",
+                            "serverID": "E0405",
+                            "text": "寄库款箱出入库明细",
+                            "tile_size": "tile",
+                            "background": "vaultLedger/icon_Money-entry-and-exit.png",
+                            "link": "/vault/input-cashbox-detail"
+                        },
+                        {
+                            "id": "vault.day-cashbox-ledger",
+                            "serverID": "E0406",
+                            "text": "当日现金款箱台账汇总",
+                            "tile_size": "tile",
+                            "background": "vaultLedger/icon_Cash-accounts.png",
+                            "link": "/vault/day-cashbox-ledger"
+                        },
+                        {
+                            "id": "vault.cashbox-churuku-detail",
+                            "serverID": "E0407",
+                            "text": "现金款箱出入库明细",
+                            "tile_size": "tile",
+                            "background": "vaultLedger/icon_Cash-discrepancy.png",
+                            "link": "/vault/cashbox-churuku-detail"
+                        },
+                        {
+                            "id": "vault.atm-cashbox-ledger",
+                            "serverID": "E0408",
+                            "text": "当日钞箱台账汇总",
+                            "tile_size": "tile",
+                            "background": "vaultLedger/icon_Sum-of-money.png",
+                            "textShowFlag": true,
+                            "link": "/vault/atm-cashbox-ledger"
+                        },
+                        {
+                            "id": "vault.atm-cashbox-detail",
+                            "serverID": "E0409",
+                            "text": "钞箱出入库明细",
+                            "tile_size": "tile",
+                            "background": "vaultLedger/icon_Money-box-entry-and-exit.png",
+                            "link": "/vault/atm-cashbox-detail"
+                        }
+                    ]
+                },
+                {
+                    "text": "库内物品流转",
+                    "serverID": "E05",
+                    "id": "in.warehouse.circulation",
+                    "icon": "zijin-icon-Secondary-icon",
+                    "group": true,
+                    "children": [
+                        {
+                            "id": "storageTransfers.casstlesTuneIn",
+                            "serverID": "E0501",
+                            "text": "ATM钞箱调入",
+                            "tile_size": "tile",
+                            "background": "storageTransfers/icon_Note-box.png",
+                            "link": "/storageTransfers/casstlesTuneIn"
+                        },
+                        {
+                            "id": "storageTransfers.casstlesTuneOut",
+                            "serverID": "E0502",
+                            "text": "ATM钞箱调出",
+                            "tile_size": "tile",
+                            "background": "storageTransfers/icon_Out-of-the-box.png",
+                            "link": "/storageTransfers/casstlesTuneOut"
+                        },
+                        {
+                            "id": "storageTransfers.cashBoxsTuneIn",
+                            "serverID": "E0503",
+                            "text": "网点款箱调入",
+                            "tile_size": "tile",
+                            "background": "storageTransfers/icon_Dot-section-box.png",
+                            "textShowFlag": true,
+                            "link": "/storageTransfers/cashBoxsTuneIn"
+                        },
+                        {
+                            "id": "storageTransfers.cashBoxsTuneOut",
+                            "serverID": "E0504",
+                            "text": "网点款箱调出",
+                            "tile_size": "tile",
+                            "background": "storageTransfers/icon_Point-box-out.png",
+                            "link": "/storageTransfers/cashBoxsTuneOut"
+                        },
+                        {
+                            "id": "storageTransfers.cashTuneIn",
+                            "serverID": "E0505",
+                            "text": "清分现金调入",
+                            "tile_size": "tile",
+                            "background": "storageTransfers/icon_Cash-in.png",
+                            "link": "/storageTransfers/cashTuneIn"
+                        },
+                        {
+                            "id": "storageTransfers.cashTuneOut",
+                            "serverID": "E0506",
+                            "text": "清分现金调出",
+                            "tile_size": "tile",
+                            "background": "storageTransfers/icon_Cash-out.png",
+                            "link": "/storageTransfers/cashTuneOut"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "text": "流转管理",
+            "serverID": "F",
+            "id": "circulate",
+            "icon": "zijin-icon-Operation-and-maintenance",
+            "group": true,
+            "children": [
+                {
+                    "serverID": "F01",
+                    "text": "网点款箱流转",
+                    "id": "circulate.branch.manage",
+                    "icon": "zijin-icon-Secondary-icon",
+                    "group": true,
+                    "children": [
+                        {
+                            "id": "branch.cashbox-out",
+                            "serverID": "F0101",
+                            "text": "款箱出库",
+                            "tile_size": "tile",
+                            "background": "tile_caseDetailQuery_1.png",
+                            "textShowFlag": true,
+                            "link": "/branch/role"
+                        },
+                        {
+                            "id": "branch.cashbox-recipients",
+                            "serverID": "F0102",
+                            "text": "款箱领用",
+                            "tile_size": "tile",
+                            "background": "tile_caseDetailQuery_1.png",
+                            "textShowFlag": true,
+                            "link": "/branch/role"
+                        },
+                        {
+                            "id": "branch.cashbox-pay",
+                            "serverID": "F0103",
+                            "text": "款箱上缴",
+                            "tile_size": "tile",
+                            "background": "tile_caseDetailQuery_1.png",
+                            "textShowFlag": true,
+                            "link": "/branch/role"
+                        },
+                        {
+                            "id": "branch.cashbox-in",
+                            "serverID": "F0104",
+                            "text": "款箱入库",
+                            "tile_size": "tile",
+                            "background": "tile_caseDetailQuery_1.png",
+                            "textShowFlag": true,
+                            "link": "/branch/role"
+                        }
+                    ]
+                },
+                {
+                    "text": "网点路程管理",
+                    "id": "addnotes.matrix",
+                    "serverID": "F02",
+                    "icon": "zijin-icon-Secondary-icon",
+                    "tile_size": "tile",
+                    "background": "tile_graph1.png",
+                    "textShowFlag": true,
+                    "link": "/addnotes/matrix"
+                },
+                {
+                    "serverID": "F03",
+                    "text": "线路管理",
+                    "id": "circulate.line.manage",
+                    "icon": "zijin-icon-Secondary-icon",
+                    "group": true,
+                    "children": [
+                        {
+                            "id": "baseInformation.routerDefine",
+                            "serverID": "F0301",
+                            "text": "线路定义",
+                            "tile_size": "tile",
+                            "textShowFlag": false,
+                            "background": "route-definition.png",
+                            "link": "/baseInformation/line"
+                        },
+                        {
+                            "id": "baseInformation.line",
+                            "serverID": "F0302",
+                            "text": "线路查询",
+                            "tile_size": "tile",
+                            "textShowFlag": false,
+                            "background": "flow/route-query.png",
+                            "link": "/baseInformation/lineQuery"
+                        },
+                        {
+                            "id": "baseInformation.lineRunMap",
+                            "serverID": "F0303",
+                            "text": "生产线路运行图",
+                            "tile_size": "tile",
+                            "textShowFlag": true,
+                            "background": "flow/Production-line-.png",
+                            "link": "/baseInformation/lineRunMap"
+                        }
+                    ]
+                },
+                {
+                    "serverID": "F04",
+                    "text": "押运车辆管理",
+                    "id": "circulate.car.manage",
+                    "icon": "zijin-icon-Secondary-icon",
+                    "group": true,
+                    "children": [
+                        {
+                            "id": "baseInformation.car",
+                            "serverID": "F0401",
+                            "text": "押运车信息管理",
+                            "tile_size": "tile",
+                            "background": "flow/Escort-vehicle-information.png",
+                            "link": "/baseInformation/car",
+                            "textShowFlag": false
+                        },
+                        {
+                            "id": "baseInformation.carSchedule",
+                            "serverID": "F0402",
+                            "text": "押运车排班管理",
+                            "tile_size": "tile",
+                            "background": "flow/escort-train-is-scheduled.png",
+                            "link": "/baseInformation/carSchedule",
+                            "textShowFlag": false
+                        }
+                    ]
+                },
+                {
+                    "serverID": "F05",
+                    "text": "钞箱监控",
+                    "icon": "zijin-icon-Secondary-icon",
+                    "id": "circulate.monitor.manage",
+                    "group": true,
+                    "children": [
+                        {
+                            "id": "circulate-monitor.cm-cassette",
+                            "serverID": "F0501",
+                            "text": "钞箱流转监控",
+                            "textShowFlag": true,
+                            "tile_size": "tile",
+                            "background": "/behavior/Cash-box-flow-monitoring.png",
+                            "link": "/circulate-monitor/cm-cassette"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "text": "开发者模式",
+            "serverID": "G",
+            "id": "developer",
+            "icon": "zijin-icon-Development-mode",
+            "group": true,
+            "children": [
+                {
+                    "serverID": "G01",
+                    "text": "组件开发",
+                    "id": "developer.component.manage",
+                    "icon": "zijin-icon-Secondary-icon",
+                    "group": true,
+                    "children": [
+                        {
+                            "id": "developer.charts",
+                            "serverID": "G0101",
+                            "text": "图表组件开发",
+                            "tile_size": "tile",
+                            "textShowFlag": false,
+                            "background": "developer/chart-component.png",
+                            "link": "/develop/charts"
+                        },
+                        {
+                            "id": "developer.panels",
+                            "serverID": "G0102",
+                            "text": "面板组件开发",
+                            "tile_size": "tile",
+                            "textShowFlag": true,
+                            "background": "developer/Panel-component.png",
+                            "link": "/develop/panels"
+                        },
+                        {
+                            "id": "developer.chart",
+                            "serverID": "G0103",
+                            "text": "组件管理",
+                            "tile_size": "tile",
+                            "textShowFlag": false,
+                            "background": "developer/tile_modelInfo.png",
+                            "link": "/develop/chartManage"
+                        }
+                    ]
+                },
+                {
+                    "serverID": "G02",
+                    "text": "预定义",
+                    "id": "developer.predefined.manage",
+                    "icon": "zijin-icon-Secondary-icon",
+                    "group": true,
+                    "children": [
+                        {
+                            "id": "developer.dashboard",
+                            "serverID": "G0201",
+                            "text": "驾驶舱预定义",
+                            "tile_size": "tile",
+                            "textShowFlag": false,
+                            "background": "developer/Cockpit-predefined.png",
+                            "link": "/develop/dashboard"
+                        },
+                        {
+                            "id": "developer.screen",
+                            "serverID": "G0202",
+                            "text": "大屏页面配置",
+                            "tile_size": "tile",
+                            "textShowFlag": false,
+                            "background": "developer/Screen-configuration.png",
+                            "link": "/develop/screen"
+                        }
+                    ]
+                },
+                {
+                    "serverID": "G03",
+                    "text": "其他",
+                    "id": "developer.other.manage",
+                    "icon": "zijin-icon-Secondary-icon",
+                    "group": true,
+                    "children": [
+                        {
+                            "id": "developer.detailQuery",
+                            "serverID": "G0301",
+                            "text": "明细查询开发",
+                            "tile_size": "tile",
+                            "textShowFlag": false,
+                            "background": "developer/tile_detailQueryDevelop.png",
+                            "link": "/develop/detail-query"
+                        },
+                        {
+                            "id": "developer.reportDevelop",
+                            "serverID": "G0302",
+                            "text": "报表模板管理",
+                            "link": "/develop/reportDevelop",
+                            "background": "developer/tile_reportModelManage.png",
+                            "tile_size": "tile",
+                            "textShowFlag": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "text": "作业管理",
+            "serverID": "H",
+            "id": "job",
+            "icon": "zijin-icon-purse",
+            "group": true,
+            "children": [
+                {
+                    "serverID": "H01",
+                    "text": "ATM作业管理",
+                    "id": "atm.job.manage",
+                    "icon": "zijin-icon-Secondary-icon",
+                    "group": true,
+                    "children": [
+                        {
+                            "id": "vaultCashWork.add-cash-form-search",
+                            "serverID": "H0101",
+                            "text": "ATM钞箱配钞",
+                            "tile_size": "tile",
+                            "background": "vaultCashWork/icon_atmWithMoneny.png",
+                            "link": "/vaultCashWork/add-cash-form-search"
+                        },
+                        {
+                            "id": "vaultCashWork.atm-cashbox-retainage-count",
+                            "serverID": "H0102",
+                            "text": "ATM钞箱尾款清点",
+                            "tile_size": "tile",
+                            "background": "vaultCashWork/icon_atmClear.png",
+                            "link": "/vaultCashWork/atm-cashbox-retainage-count"
+                        },
+                        {
+                            "id": "vaultCashWork.atm-count-detail-search",
+                            "serverID": "H0103",
+                            "text": "ATM清点信息查询",
+                            "tile_size": "tile",
+                            "background": "vaultCashWork/icon_atmClearQry.png",
+                            "link": "/vaultCashWork/atm-count-detail-search"
+                        },
+                        {
+                            "id": "vaultCashWork.fill-error-form",
+                            "serverID": "H0104",
+                            "text": "ATM清点差错协查表",
+                            "tile_size": "tile",
+                            "background": "vaultCashWork/icon_clearFault.png",
+                            "link": "/vaultCashWork/fill-error-form"
+                        },
+                        {
+                            "id": "vaultCashWork.atm-count-daily-form",
+                            "serverID": "H0105",
+                            "text": "ATM填写日结单查询",
+                            "tile_size": "tile",
+                            "background": "vaultCashWork/icon_atmAduitQuery.png",
+                            "link": "/vaultCashWork/atm-count-daily-form"
+                        },
+                        {
+                            "id": "vaultCashWork.auditing-daily-form",
+                            "serverID": "H0106",
+                            "text": "ATM审核日结单查询",
+                            "tile_size": "tile",
+                            "background": "vaultCashWork/icon_atmAduit.png",
+                            "link": "/vaultCashWork/auditing-daily-form"
+                        }
+                    ]
+                },
+                {
+                    "serverID": "H02",
+                    "text": "网点作业管理",
+                    "id": "vaultCashWork.job.manage",
+                    "icon": "zijin-icon-Secondary-icon",
+                    "group": true,
+                    "children": [
+                        {
+                            "id": "vaultCashWork.escort-form-search",
+                            "serverID": "H0201",
+                            "text": "网点领用现金配钞",
+                            "tile_size": "tile",
+                            "background": "vaultCashWork/icon_orgUseWithMoney.png",
+                            "link": "/vaultCashWork/escort-form-search"
+                        },
+                        {
+                            "id": "vaultCashWork.branch-paidcash-count",
+                            "serverID": "H0202",
+                            "text": "网点上缴现金清点",
+                            "tile_size": "tile",
+                            "background": "vaultCashWork/icon_orgMoneyClear.png",
+                            "link": "/vaultCashWork/branch-paidcash-count"
+                        },
+                        {
+                            "id": "vaultCashWork.branch-paidcash-form-search",
+                            "serverID": "H0203",
+                            "text": "网点上缴现金清点差错协查表",
+                            "tile_size": "tile",
+                            "background": "vaultCashWork/icon_orgFault.png",
+                            "textShowFlag": true,
+                            "link": "/vaultCashWork/branch-paidcash-form-search"
+                        },
+                        {
+                            "id": "vaultCashWork.branch-count-daily-form",
+                            "serverID": "H0204",
+                            "text": "网点填写日结单查询",
+                            "tile_size": "tile",
+                            "background": "vaultCashWork/icon_orgClearDaily.png",
+                            "link": "/vaultCashWork/branch-count-daily-form"
+                        },
+                        {
+                            "id": "vaultCashWork.branch-auditing-daily-form",
+                            "serverID": "H0205",
+                            "text": "网点审核日结单查询",
+                            "tile_size": "tile",
+                            "background": "vaultCashWork/icon_orgMoney.png",
+                            "textShowFlag": true,
+                            "link": "/vaultCashWork/branch-auditing-daily-form"
+                        },
+                        {
+                            "id": "vaultCashWork.requisition-cash-clearing",
+                            "serverID": "H0206",
+                            "text": "领用现金清分",
+                            "tile_size": "tile",
+                            "background": "vaultCashWork/icon_orgFault.png",
+                            "textShowFlag": true,
+                            "link": "/vaultCashWork/requisition-cash-clearing"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "report",
+            "text": "统计报表",
+            "serverID": "I",
+            "icon": "zijin-icon-report",
+            "children": [
+                {
+                    "id": "report.static",
+                    "text": "统计报表",
+                    "link": "/report/staticReports",
+                    "serverID": "I01",
+                    "background": "system/tile_userInfo2.png",
+                    "tile_size": "tile",
+                    "textShowFlag": true
+                }
+            ]
+        },
+        {
+            "text": "多维分析",
+            "serverID": "N",
+            "id": "bi",
+            "icon": "zijin-icon-multianalysis",
+            "group": true,
+            "children": [
+                {
+                    "serverID": "N01",
+                    "text": "多维报表",
+                    "id": "bi.mdReport.manage",
+                    "icon": "zijin-icon-Secondary-icon",
+                    "group": true,
+                    "children": [
+                        {
+                            "id": "bi.mdReport",
+                            "serverID": "N0101",
+                            "text": "多维报表",
+                            "tile_size": "tile-wide",
+                            "textShowFlag": true,
+                            "background": "bi/tile_graph1.png",
+                            "link": "/bi/olap/mdReport"
+                        }
+                    ]
+                },
+                {
+                    "serverID": "N02",
+                    "text": "即席分析",
+                    "id": "bi.adHocQuery.manage",
+                    "icon": "zijin-icon-Secondary-icon",
+                    "group": true,
+                    "children": [
+                        {
+                            "id": "bi.adHocQuery",
+                            "serverID": "N0201",
+                            "text": "即席分析",
+                            "tile_size": "tile-wide",
+                            "background": "bi/tile_instantAnalysis.png",
+                            "textShowFlag": false,
+                            "link": "/bi/olap/adHocQuery"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "text": "平台监控",
+            "serverID": "O",
+            "id": "monitor",
+            "icon": "zijin-icon-monitor",
+            "group": true,
+            "children": [
+                {
+                    "text": "集群监控",
+                    "serverID": "O01",
+                    "id": "monitor.cluster.manage",
+                    "icon": "zijin-icon-Secondary-icon",
+                    "group": true,
+                    "children": [
+                        {
+                            "id": "monitor.hdfs",
+                            "text": "HDFS监控",
+                            "serverID": "O0101",
+                            "tile_size": "tile",
+                            "background": "monitor/tile_hdfs.png",
+                            "textShowFlag": false,
+                            "link": "/monitor/datamonitor/hdfs"
+                        },
+                        {
+                            "id": "monitor.mapreduce",
+                            "text": "MapReduce",
+                            "serverID": "O0101",
+                            "tile_size": "tile",
+                            "background": "monitor/tile_mapreduce.png",
+                            "textShowFlag": false,
+                            "link": "/monitor/datamonitor/mapreduce"
+                        },
+                        {
+                            "id": "monitor.hbase",
+                            "text": "HBase监控",
+                            "serverID": "O0101",
+                            "tile_size": "tile-wide",
+                            "background": "monitor/tile_olap.png",
+                            "textShowFlag": false,
+                            "link": "/monitor/datamonitor/hbase"
+                        },
+                        {
+                            "id": "monitor.spark",
+                            "text": "Spark监控",
+                            "serverID": "O0101",
+                            "tile_size": "tile",
+                            "background": "monitor/tile_spark.png",
+                            "textShowFlag": false,
+                            "link": "/monitor/datamonitor/spark"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "text": "备份",
+            "id": "backup",
+            "serverID": "BF",
+            "icon": "zijin-icon-development",
+            "group": true,
+            "children": [
+                {
+                    "serverID": "BF01",
+                    "text": "加钞组管理",
+                    "id": "backup.addnoteGroup.manage",
+                    "icon": "zijin-icon-Secondary-icon",
+                    "group": true,
+                    "children": [
+                        {
+                            "id": "baseInformation.addnoteGroup",
+                            "serverID": "BF0101",
+                            "text": "加钞组信息",
+                            "tile_size": "tile",
+                            "background": "orgManage.png",
+                            "link": "/baseInformation/addnoteGroup"
+                        }
+                    ]
+                },
+                {
+                    "serverID": "BF02",
+                    "text": "吞卡管理",
+                    "id": "backup.retainCard.manage",
+                    "icon": "zijin-icon-Secondary-icon",
+                    "group": true,
+                    "children": [
+                        {
+                            "id": "baseInformation.retainCard",
+                            "serverID": "BF0201",
+                            "text": "吞卡信息",
+                            "tile_size": "tile-wide",
+                            "background": "retainCard.png",
+                            "link": "/baseInformation/retainCard"
+                        }
+                    ]
+                },
+                {
+                    "serverID": "BF03",
+                    "text": "钥匙管理",
+                    "id": "backup.key.manage",
+                    "icon": "zijin-icon-Secondary-icon",
+                    "group": true,
+                    "children": [
+                        {
+                            "id": "baseInformation.key",
+                            "serverID": "BF0301",
+                            "text": "钥匙信息",
+                            "tile_size": "tile",
+                            "background": "key-information.png",
+                            "textShowFlag": false,
+                            "link": "/baseInformation/key"
+                        },
+                        {
+                            "id": "baseInformation.keyType",
+                            "serverID": "BF0302",
+                            "text": "钥匙类型",
+                            "tile_size": "tile",
+                            "background": "key-type.png",
+                            "textShowFlag": true,
+                            "link": "/baseInformation/keyType"
+                        },
+                        {
+                            "id": "baseInformation.keyChain",
+                            "serverID": "BF0303",
+                            "text": "钥匙串信息",
+                            "tile_size": "tile",
+                            "background": "key-string-information.png",
+                            "textShowFlag": false,
+                            "link": "/baseInformation/keyChain"
+                        }
+                    ]
+                },
+                {
+                    "serverID": "BF04",
+                    "text": "钥匙分发管理",
+                    "id": "backup.keyUse.manage",
+                    "icon": "zijin-icon-Secondary-icon",
+                    "group": true,
+                    "children": [
+                        {
+                            "id": "addnoteOperation.keyUse",
+                            "serverID": "BF0401",
+                            "text": "钥匙领用管理",
+                            "tile_size": "tile",
+                            "background": "addnoteOperation/icon_keyUse.png",
+                            "link": "/addnoteOperation/keyUse"
+                        },
+                        {
+                            "id": "addnoteOperation.keyUseQuery",
+                            "serverID": "BF0402",
+                            "text": "钥匙领用记录查询",
+                            "tile_size": "tile",
+                            "background": "addnoteOperation/icon_KeyUseQry.png",
+                            "link": "/addnoteOperation/keyUseQuery"
+                        },
+                        {
+                            "id": "addnoteOperation.keyUse_dailySummary",
+                            "serverID": "BF0403",
+                            "text": "钥匙领用每日汇总",
+                            "tile_size": "tile",
+                            "background": "addnoteOperation/icon_KeyUseDaily.png",
+                            "textShowFlag": true,
+                            "link": "/addnoteOperation/keyUse_dailySummary"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "home",
+            "text": "首页",
+            "serverID": "HOME",
+            "link": "/home"
+        }
+    ]
+}

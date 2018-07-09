@@ -1,0 +1,25 @@
+<!--<tree-root [nodes]="nodes" [options]="options"></tree-root>-->
+<nz-tree [nzNodes]="nodes" [nzOptions]="options"></nz-tree>
+
+<context-menu>
+    <ng-template contextMenuItem (execute)="deleteNode($event.item)">
+        删除当前节点
+    </ng-template>
+    <ng-template contextMenuItem let-item [enabled]="notFirst" (execute)="moveUp($event.item)">
+        上移
+    </ng-template>
+    <ng-template contextMenuItem let-item [enabled]="notLast" (execute)="moveDown($event.item)">
+        下移
+    </ng-template>
+    <ng-template contextMenuItem [divider]="true"></ng-template>
+    <ng-template contextMenuItem (execute)="addSiblingNode($event.item)">
+        新增兄弟节点
+    </ng-template>
+    <ng-template contextMenuItem (execute)="addChildNode($event.item)">
+        新增子节点
+    </ng-template>
+</context-menu>
+
+
+
+
